@@ -1,0 +1,648 @@
+/*importerer font fra fonts.google*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: 'Fjalla One', sans-serif;
+    background: ivory;
+    min-height: 1rem;
+    margin-bottom: 6.5rem;
+
+}
+
+/*CSS for wrapper som ligger rundt alle elementene i body*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*Styling for class header som blir brukt på alle sider*/
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #9A0002;
+    margin: auto;
+    width: 100%;
+}
+
+.header h1 {
+    margin: auto;
+    text-align: center;
+    color: ivory;
+    font-size: 3.125em;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9A0002;
+
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: ivory;
+    text-align: center;
+    padding: 2px 16px;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+/*stop header styling*/
+
+/*styling for infoboxelementer i gjøremål.html*/
+.rad {
+    display: flex;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    justify-content: space-around;
+}
+
+.flex-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 47rem;
+
+}
+
+.flex-image img {
+    max-width: 90%;
+    height: auto;
+    justify-content: center;
+}
+
+.flex-text {
+    display: flex;
+    flex: 1;
+    max-width: 50%;
+    flex-direction: column;
+
+}
+
+.flex-text h2 {
+    text-align: center;
+}
+
+/*stop gjøremål elementer*/
+
+/*styling for slideshowelementer som ligger i index.html. Bruker funksjon showSlides fra utilites.js*/
+
+#slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+
+}
+
+.image_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.image_container img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9A0002;
+    font-size: 3rem;
+    text-decoration: underline #9A0002;
+}
+
+/*stop slideShow styling*/
+
+/*styling for søk og kart i toalett.html*/
+
+#mapliste {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#hurtigsøk {
+    display: flex;
+    justify-content: center;
+    height: 7%;
+    border-bottom: solid #9A0002;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+#sokogliste {
+    margin-top: 2rem;
+    width: 17%;
+    align-items: center;
+    justify-content: center;
+}
+
+#avansert_søk {
+    margin: 2%;
+    flex-direction: column;
+    border: solid #9A0002;
+    padding: 1%;
+    width: 100%;
+}
+
+#avansert_søk h2 {
+    text-align: center;
+}
+
+#avansert_søktxt {
+    text-align: center;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
+
+#kjaptsøk, #sok {
+    background-color: #A8A89F;
+    color: ivory;
+    border-radius: 5px;
+    border-color: #A8A89F;
+}
+
+#rasktsok, #klokkeslett, #makspris {
+    border-radius: 5px;
+}
+
+#genListe {
+    margin: 2%;
+    border: solid #9A0002;
+    padding: 1%;
+    width: 100%;
+}
+
+#genListe h2 {
+    text-align: center;
+}
+
+#liste {
+    margin: 2%;
+    flex: 2;
+}
+
+/*stop style toalett*/
+
+/*styling for map. Blir brukt i lekeplass.html, toalett.html og minFavorittLekeplass.html*/
+#map {
+    margin: 2%;
+    width: 75%;
+    height: 45rem;
+}
+/*stop map*/
+
+#map1 {
+    margin: 2%;
+    width: 75%;
+    height: 45rem;
+}
+
+/*styling for lekeplass.html*/
+#lekeplassliste {
+    display: flex;
+}
+
+#lekeplass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lekeplass button {
+    border-radius: 5px;
+    background-color: #A8A89F;
+    border-color: #A8A89F;
+    color: ivory;
+}
+
+#lister {
+    border: solid #9A0002;
+    margin: 1%;
+    padding: 1%;
+    width: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+#finnlekeplass {
+
+    align-content: center;
+    justify-content: center;
+}
+
+#finnlekeplass input {
+
+    width: 70%;
+}
+
+#finnlekeplass h3 {
+    text-align: center;
+}
+/*stop styling lekeplass*/
+
+#selector {
+    border-bottom: solid #9A0002;
+    padding: 5%;
+}
+
+#selector select {
+    width: 75%;
+    left: 1%;
+}
+
+
+/*Styling for minFavorittLekeplass.html*/
+#favLeke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%%;
+}
+
+#favContainer {
+    display: flex;
+    flex-direction: column;
+    border: solid #9A0002;
+    width: 20%;
+    justify-items: center;
+    align-content: center;
+    padding: 1%;
+    margin: 2%;
+
+}
+
+#favContainer h2 {
+    text-align: center;
+}
+
+#favpContainer {
+    display: flex;
+    border: solid #9A0002;
+    width: 20%;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#favpContainer p {
+    text-align: center;
+
+    margin: 2%;
+}
+/*stop styling for minFavorittLekeplass.html*/
+
+/*styling ulrikeRom.html*/
+#rom_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#rom_border{
+    border: solid #9A0002;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+#rom_border button{
+    width: 30%;
+}
+/*stop styling ulikeRom.html*/
+
+/*styling for footer som er på alle sidene*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9A0002;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    display: flex;
+    color: ivory;
+    font-size: 3vh;
+
+}
+/*stop footer*/
+
+/*media query for mobilversjon*/
+@media screen and (max-width: 699px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        background-color: #9A0002;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .header h1 {
+        margin: auto;
+        text-align: center;
+        color: ivory;
+        font-size: 2.125em;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #9A0002;
+
+    }
+
+    .navbar li {
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+
+    .navbar li a {
+        display: block;
+        color: ivory;
+        text-align: center;
+        padding: 2px 16px;
+        text-decoration: none;
+        font-size: 2vh;
+    }
+
+    .image_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 10%;
+
+    }
+
+    .image_container img {
+        display: flex;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slides {
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9A0002;
+        font-size: 3rem;
+        text-decoration: underline #9A0002;
+    }
+
+    #mapliste {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    #hurtigsøk {
+        display: flex;
+        justify-content: center;
+        height: 7%;
+        border-bottom: solid #9A0002;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    #sokogliste {
+        margin-top: 2rem;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #avansert_søk {
+        margin: 2%;
+        flex-direction: row;
+        border: solid #9A0002;
+        padding: 1%;
+        width: 100%;
+    }
+
+    #avansert_søk h2 {
+        text-align: center;
+    }
+
+    #avansert_søktxt {
+        text-align: center;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+    }
+
+    #genListe {
+        margin: 2%;
+        border: solid #9A0002;
+        padding: 1%;
+        width: 100%;
+    }
+
+    #genListe h2 {
+        text-align: center;
+    }
+
+    #map {
+        margin: 2%;
+        width: 95%;
+        height: 30rem;
+    }
+
+    #liste {
+        margin: 2%;
+        flex: 2;
+    }
+
+    #lekeplassliste {
+        display: flex;
+    }
+
+    #kjaptsøk, #sok {
+        background-color: #A8A89F;
+        color: ivory;
+        border-radius: 5px;
+        border-color: #A8A89F;
+    }
+
+    #rasktsok, #klokkeslett, #makspris {
+        border-radius: 5px;
+    }
+
+    #lekeplass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #lekeplass button {
+        border-radius: 5px;
+        background-color: #A8A89F;
+        border-color: #A8A89F;
+        color: ivory;
+    }
+
+    #favLeke {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #favContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid #9A0002;
+        width: 90%;
+        justify-items: center;
+        align-content: center;
+        padding: 1%;
+        margin: 2%;
+
+    }
+
+    #favContainer h2 {
+        text-align: center;
+    }
+
+    #favpContainer {
+        display: flex;
+        border: solid #9A0002;
+        width: 90%;
+        margin: 2%;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #favpContainer p {
+        text-align: center;
+
+        margin: 2%;
+    }
+
+    #lister {
+        border: solid #9A0002;
+        margin: 1%;
+        padding: 1%;
+        width: 60%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9A0002;
+        height: 2rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    footer p {
+        display: flex;
+        color: ivory;
+        font-size: 1.5vh;
+
+    }
+
+    .rad {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-left: 2rem;
+        justify-content: space-around;
+    }
+
+    .flex-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 47rem;
+
+    }
+
+    .flex-image img {
+        max-width: 90%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .flex-text {
+        display: flex;
+        flex: 1;
+        max-width: 50%;
+        flex-direction: column;
+
+    }
+
+    .flex-text h2 {
+        text-align: center;
+    }
+}
+

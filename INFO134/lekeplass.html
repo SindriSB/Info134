@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lekeplasser</title>
+    <script src="js/lekeplasser.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/utilities.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBut1qd8Pyy0GiPO08NQteL0d1Y75-LF5I&callback=initMap">
+    </script>
+    <meta name="viewport" content="initial-scale=1.0">
+</head>
+<body onload="startLekeplass()">
+<div class="wrapper">
+    <header class="header">
+        <h1>Bergen By</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Startside</a></li>
+                <li><a href="gjøremål.html">Gjøremål</a></li>
+                <li><a href="toalett.html">Toaletter</a></li>
+                <li><a href="lekeplass.html">Lekeplasser</a></li>
+                <li><a href="minFavorittLekeplass.html">Min Favorittlekeplass</a></li>
+                <li><a href="ulrikeRom.html">Rom på Ulrike Pihls Hus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="lekeplass">
+        <div id="lister">
+
+            <div id="finnlekeplass">
+                <p id="minFavLekeplass"></p>
+                <h3> Finn en lekeplass</h3>
+                <input id="finne" type="text" name="" value=""> </input>
+                <button onclick="finnlekeplass()" type="button" name="button">Søk</button>
+                <p id="listeLekeplass"></p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <footer>
+        <p>Laget av kandidat 169 og 257</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bm">
+<head>
+    <meta charset="UTF-8">
+    <title>Toaletter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/sok.js"></script>
+    <script src="js/utilities.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBut1qd8Pyy0GiPO08NQteL0d1Y75-LF5I&callback=initMap">
+    </script>
+</head>
+
+<body onload="start()">
+<div class="wrapper">
+    <header class="header">
+        <h1>Bergen By</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Startside</a></li>
+                <li><a href="gjøremål.html">Gjøremål</a></li>
+                <li><a href="toalett.html">Toaletter</a></li>
+                <li><a href="lekeplass.html">Lekeplasser</a></li>
+                <li><a href="minFavorittLekeplass.html">Min Favorittlekeplass</a></li>
+                <li><a href="ulrikeRom.html">Rom på Ulrike Pihls Hus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mapliste">
+        <div id="sokogliste">
+            <div id="avansert_søk">
+                <h2>Søk</h2>
+                <div id="hurtigsøk">
+                    <input name="Hurtigsøk" id="rasktsok" placeholder="Hurtigsøk"/>
+                    <input type="button" id="kjaptsøk" value="Søk" onclick="starten(); getTimeStart()"/>
+                </div>
+                <h3 id="avansert_søktxt">Avansert Søk</h3>
+                <form id="frm">
+                    <input type="checkbox" name="herre" id="herre" placeholder="herre"/>Herre<br>
+                    <input type="checkbox" name="dame" id="dame" placeholder="Kjønn"/>Dame<br>
+                    <input type="checkbox" name="Rullestoltilgang" id="rullestol"
+                           placeholder="Rullestoltilgang"/>Rullestol<br>
+                    <input type="checkbox" name="aapen" id="aapen" placeholder="Åpen"/>Åpen nå<br>
+                    <input type="checkbox" name="stellerom" id="stellerom" placeholder="Stellerom"/>Stellerom<br>
+                    <input type="checkbox" name="gratis" id="gratis" placeholder="Gratis"/>Gratis<br>
+                    <input name="aapen klokkeslett" id="klokkeslett" placeholder="Åpen klokkeslett"/><br>
+                    <input name="makspris" id="makspris" placeholder="Makspris"/><br><br>
+                    <!--Knappen som kaller på funksjonen søk-->
+                    <input type="button" id="sok" value="Søk" onclick="start2()"/>
+                </form>
+            </div>
+            <div id="genListe">
+                <h2>Søkeresultater</h2>
+                <div id="liste"></div>
+            </div>
+        </div>
+        <div id="map"></div>
+
+        <div id="avansertSok"></div>
+    </div>
+    <footer>
+        <p>Laget av kandidat 169 og 257</p>
+    </footer>
+</div>
+</body>
+</html>

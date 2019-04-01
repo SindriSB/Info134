@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bm">
+<head>
+    <meta charset="UTF-8">
+    <title>Romliste Ulrike Pihls hus</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/ulrikeRom.js"></script>
+    <script src="js/utilities.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+</head>
+<body onload="startRom()">
+<div class="wrapper">
+    <header class="header">
+        <h1>Bergen By</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Startside</a></li>
+                <li><a href="gjøremål.html">Gjøremål</a></li>
+                <li><a href="toalett.html">Toaletter</a></li>
+                <li><a href="lekeplass.html">Lekeplasser</a></li>
+                <li><a href="minFavorittLekeplass.html">Min Favorittlekeplass</a></li>
+                <li><a href="ulrikeRom.html">Rom på Ulrike Pihls Hus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="rom_container">
+        <div id="rom_border">
+            <h3>Romoversikt på Ulrike Phils Hus</h3>
+            <div id="rom"></div>
+            <button onclick="sortNummer()"> Sorter etter størrelse</button>
+            <button onclick="startRom()">Sorter alfabetisk</button>
+        </div>
+    </div>
+    <footer>
+        <p>Laget av kandidat 169 og 257</p>
+    </footer>
+</div>
+</body>
+</html>
